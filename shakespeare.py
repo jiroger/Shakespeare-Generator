@@ -128,6 +128,8 @@ class Shakespeare:
             history = history[1:] + c
         return "".join(text)    
 
+
 model = Shakespeare()
-lm3 = model.train_lm(3)
-print(model.generate_text(lm3, 3, 500))
+#FEEL FREE TO ADJUST STUFF HERE
+lm3 = model.train_lm(3) #n=3 in this example
+print(model.generate_text(lm3, 3, 500)) #the second argument is n=3 and third argument is how many words you want to be generated
