@@ -130,6 +130,31 @@ class Shakespeare:
 
 
 model = Shakespeare()
-#FEEL FREE TO ADJUST STUFF HERE
-lm3 = model.train_lm(3) #n=3 in this example
-print(model.generate_text(lm3, 3, 500)) #the second argument is n=3 and third argument is how many words you want to be generated
+print("Please enter an n")
+succeed = False
+
+while(not succeed):
+    try:
+        n = int(input())
+        if (n <= 0):
+            print("n must be > 0")
+        else:
+            succeed = True
+    except:
+        print("Please enter valid n")
+    
+succeed = False
+print("How many words do you want to generate?")
+
+while(not succeed):
+    try:
+        numWords = int(input())      
+        if (numWords <= 0):
+            print("Number of words must be > 0")
+        else:
+            succeed = True      
+    except:
+        print("Please enter valid number of words")
+
+lm3 = model.train_lm(n) 
+print(model.generate_text(lm3, n, numWords)) #the second argument is n=3 and third argument is how many words you want to be generated

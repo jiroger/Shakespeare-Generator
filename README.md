@@ -1,7 +1,5 @@
 # Shakespeare-Generator
-This little project generates Shakespeare plays by training its underlying n-gram word model with Shakespeare's entire corpus. Feel free to adjust what n is at the bottom of the `shakespeare.py` file; just be warned that using n's over 11 will require some patience!
-
-Additionally, you can tell the algorithm how many words you want generated (default is 100).
+This little project generates Shakespeare plays by training its underlying n-gram word model with Shakespeare's entire corpus. When you run `shakespeare.py`, you will be prompted to specify a value for n (just be warned that using n's over 11 will require some patience!) and the number of words you want to generate (set at 100 by default). 
 
 How to run Shakespeare Generator
 0) Make sure your machine is using Python 3!!!! 
